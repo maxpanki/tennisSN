@@ -19,8 +19,7 @@
 tion_t}</textarea>
 <h3 class="page__article__cards__title">Ключевие слова</h3>
 <textarea class="form-control" rows="6" name="keywords">{$keywords_t}</textarea>
-<h3 class="page__article__cards__title">Соц сети</h3>
- <div class="">
+
 	 <textarea class="form-control" rows="5" name="sieti">{$sieti}</textarea>
 </div>
 <h3 class="page__article__cards__title">Сми</h3>

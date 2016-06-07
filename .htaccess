@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !^intro\.webm
+RewriteCond ^mail\.csv$ mail\.csv
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^$ index.php?url=index [L]
+RewriteRule ^([^?]*)$ index.php?url=$1 [L,QSA]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . / [L]
+</IfModule>
+
